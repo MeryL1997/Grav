@@ -15,7 +15,7 @@ author: 'Mery Lema'
 <body>
 
 <canvas id="canvas" width="305" height="305"
-style="background-color:#333">
+style="background-color:#9400D3">
 </canvas>
 
 <script>
