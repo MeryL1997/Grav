@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/accounts/meryl.yaml',
-    'modified' => 1560321866,
+    'modified' => 1560367448,
     'data' => [
         'state' => 'enabled',
         'email' => 'mery.lema@pucese.edu.ec',
@@ -10,13 +10,16 @@ return [
         'title' => 'Administrador',
         'access' => [
             'admin' => [
-                'login' => true,
-                'super' => true
+                'super' => 'true',
+                'login' => 'true'
             ],
             'site' => [
-                'login' => true
+                'login' => 'true'
             ]
         ],
-        'hashed_password' => '$2y$10$LIGHNHjzIFs4BUOas8XKiuAI.NOlq5S0kAJMpMLOYLChImW6mPRYy'
+        'hashed_password' => '$2y$10$LIGHNHjzIFs4BUOas8XKiuAI.NOlq5S0kAJMpMLOYLChImW6mPRYy',
+        'language' => 'es',
+        'twofa_enabled' => false,
+        'twofa_secret' => 'CRPFJKUFPBP7JBSXWWYDM7CSZRYQ6E5G'
     ]
 ];

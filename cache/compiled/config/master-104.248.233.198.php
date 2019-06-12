@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560342595,
-    'checksum' => '7fb4fa5d3346cd47c8ec16f505133040',
+    'timestamp' => 1560372313,
+    'checksum' => 'e5482d32bd55852191aaaecb1b3e5dbd',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -15,11 +15,11 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1560341557
+                'modified' => 1560370016
             ],
             'plugins/jscomments' => [
                 'file' => 'user/config/plugins/jscomments.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -27,11 +27,11 @@ return [
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -39,55 +39,55 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1560321781
+                'modified' => 1560349745
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ]
         ],
         'user/plugins' => [
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/relatedpages' => [
                 'file' => 'user/plugins/relatedpages/relatedpages.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
@@ -95,11 +95,11 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -107,15 +107,15 @@ return [
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1560321598
+                'modified' => 1560349745
             ]
         ]
     ],
@@ -201,7 +201,7 @@ return [
                 'mailer' => [
                     'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
+                        'server' => 'smtp.gmail.com',
                         'port' => 465,
                         'encryption' => 'ssl',
                         'user' => 'guadalupelema9@gmail.com',
