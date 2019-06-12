@@ -1,13 +1,20 @@
 enabled: true
-from: your@email.here
-to: your@email.here
+from: guadalupelema9@gmail.com
+to: guadalupelema9@gmail.com
+queue:
+  enabled: false
+  flush_frequency: '* * * * *'
+  flush_msg_limit: 10
+  flush_time_limit: 100
 mailer:
-  engine: mail
+  engine: smtp
   smtp:
-    server: localhost
-    port: 25
-    encryption: none
-    user: ''
-    password: ''
+    server: smtp.gmail.com
+    port: 465
+    encryption: ssl
+    user: guadalupelema9@gmail.com
+    password: lmery1997
   sendmail:
-    bin: '/usr/sbin/sendmail'
+    bin: /usr/sbin/sendmail
+content_type: text/html
+debug: false

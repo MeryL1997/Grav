@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1560349754,
-    'checksum' => 'd836bce91c27f762488aa84d588607ac',
+    'timestamp' => 1560370016,
+    'checksum' => 'e5482d32bd55852191aaaecb1b3e5dbd',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -15,7 +15,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1560349745
+                'modified' => 1560370016
             ],
             'plugins/jscomments' => [
                 'file' => 'user/config/plugins/jscomments.yaml',
@@ -188,9 +188,9 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'your@email.here',
+                'from' => 'guadalupelema9@gmail.com',
                 'from_name' => NULL,
-                'to' => 'your@email.here',
+                'to' => 'guadalupelema9@gmail.com',
                 'to_name' => NULL,
                 'queue' => [
                     'enabled' => false,
@@ -199,13 +199,13 @@ return [
                     'flush_time_limit' => 100
                 ],
                 'mailer' => [
-                    'engine' => 'mail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'server' => 'smtp.gmail.com',
+                        'port' => 465,
+                        'encryption' => 'ssl',
+                        'user' => 'guadalupelema9@gmail.com',
+                        'password' => 'lmery1997'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
