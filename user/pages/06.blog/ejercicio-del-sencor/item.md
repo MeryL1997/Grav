@@ -1,5 +1,6 @@
 ---
 title: 'Ejercicio del Sencor'
+media_order: sensor.jpg
 date: '11:12 06/10/2019'
 taxonomy:
     category:
