@@ -12,7 +12,7 @@ taxonomy:
 
 [](hqdefault.jpg)
 
-**_# GRAV TIENE ESTRUCTURAS DE PHP QUE SON DE MUCHA IMPORTANCIA._**
+**_ GRAV TIENE ESTRUCTURAS DE PHP QUE SON DE MUCHA IMPORTANCIA._ **
 _Carpetas que tiene importancia si o no:_
 * _**/assets:** Es utilizada para almacenar archivos procesados como cssy y jsarchivos.
 * **/backup:** Es una carpeta donde tiene almacenado la ubicación predeterminada para copias de seguridad Grav.

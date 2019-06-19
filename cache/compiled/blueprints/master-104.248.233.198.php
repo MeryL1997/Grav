@@ -1,37 +1,37 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1560372313,
-    'checksum' => '12464fdbec272d08e6b4118f2d793119',
+    'timestamp' => 1560953674,
+    'checksum' => '200d3ab3506341c62c9d39f602609d52',
     'files' => [
         'system/blueprints/config' => [
             'backups' => [
                 'file' => 'system/blueprints/config/backups.yaml',
-                'modified' => 1560349745
+                'modified' => 1560950775
             ],
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1560349745
+                'modified' => 1560950775
             ],
             'scheduler' => [
                 'file' => 'system/blueprints/config/scheduler.yaml',
-                'modified' => 1560349745
+                'modified' => 1560950775
             ],
             'security' => [
                 'file' => 'system/blueprints/config/security.yaml',
-                'modified' => 1560349745
+                'modified' => 1560950775
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1560349745
+                'modified' => 1560950775
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1560349745
+                'modified' => 1560950775
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1560349745
+                'modified' => 1560950775
             ]
         ],
         'user/plugins' => [
@@ -578,7 +578,7 @@ return [
             ],
             'site.summary.size' => [
                 'type' => 'text',
-                'size' => 'x-small',
+                'size' => 'small',
                 'append' => 'PLUGIN_ADMIN.CHARACTERS',
                 'label' => 'PLUGIN_ADMIN.SUMMARY_SIZE',
                 'validate' => [

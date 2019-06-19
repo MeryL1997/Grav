@@ -1,6 +1,6 @@
 ---
 title: 'Ejercicio del Sencor'
-ate: '12:25 06/12/2019'
+date: '11:12 06/10/2019'
 taxonomy:
     category:
         - blog
@@ -12,17 +12,17 @@ author: 'Mery Lema'
 ---
 
 **_Solucion1_**
+
+
 {
     init: function(elevators, floors) {
         var elevator = elevators[0]; // Let's use the first elevator
-
         // Whenever the elevator is idle (has no more queued destinations) ...
         elevator.on("idle", function() {
             // let's go to all the floors (or did we forget one?)
             elevator.goToFloor(0);
             elevator.goToFloor(1);
 	    elevator.goToFloor(2);
-            
         });
     },
     update: function(dt, elevators, floors) {
@@ -30,117 +30,70 @@ author: 'Mery Lema'
     }
 }
 
+
 _**Solucion2**_
+
+
 {
-    
 init: function(elevators, floors) {
-        
-        
-function initElevator(elevator) {
-            
-elevator.on("idle", function() {});
-            
-elevator.on("floor_button_pressed", function(floorNum) {
-              
-  elevator.goToFloor(floorNum, true);
-            
+function initElevator(elevator) {   
+elevator.on("idle", function() {});    
+elevator.on("floor_button_pressed", function(floorNum) {          
+  elevator.goToFloor(floorNum, true);           
+});       
+elevator.on("passing_floor", function(floorNum, direction) {      
+          var stopAtFloor = false;              
+elevator.destinationQueue = elevator.destinationQueue.filter(function (n, i) {
+                 if (n == floorNum) {         
+stopAtFloor = true;       
+ }         
+return n != floorNum;               
 });
-            
-elevator.on("passing_floor", function(floorNum, direction) {
-      
-          var stopAtFloor = false;
-              
-  elevator.destinationQueue = elevator.destinationQueue.filter(function (n, i) {
-   
-                 if (n == floorNum) { 
-                        
-stopAtFloor = true;
-                   
- }
-                    
-return n != floorNum;
-                
-});
-             
    if (stopAtFloor) {
-      
               elevator.checkDestinationQueue();
-    
                 elevator.goToFloor(floorNum, true);    
-            
                 }
-   
          });
-       
- };
-        
-       
+ }; 
  function findNearestElevator(floor) {
-    
-        var possibilities = elevators
-        
+        var possibilities = elevators;
         .map(function (e) { 
-                 
    return { 
-                     
-  elevator: e, 
-                      
+  elevator: e,  
   distance: e.destinationQueue.length == 0 ? 0 : Math.abs(floor.floorNum() - e.currentFloor()),
-    
                 }; 
-             
-   });
-           
+   }); 
  possibilities.sort(function (left, right) {
-        
         return left.distance - right.distance;
-   
         });
-         
    return possibilities[0].elevator;
    
      };
-        
-        
 function initFloor(floor) {
-   
          floor.on("up_button_pressed", function() {
-    
             // Maybe tell an elevator to go to this floor?
- 
                findNearestElevator(floor).goToFloor(floor.floorNum());
-  
           });
             floor.on("down_button_pressed", function() {
-      
           // Maybe tell an elevator to go to this floor?
-               
  findNearestElevator(floor).goToFloor(floor.floorNum());
-          
-  });
-     
-   };
-        
-       
+  });  
+  };   
  elevators.forEach(initElevator);
-      
   floors.forEach(initFloor);
-  
   },
-   
- update: function(dt, elevators, floors) {
- 
+    update: function(dt, elevators, floors) {
   // We normally don't need to do anything here
-    
+}
 }
 
-}
 
 **_Solucion 3_**
+
+
 {
     init: function(elevators, floors) {
-        
-        function initElevator(elevator) {
+    function initElevator(elevator) {
             elevator.on("idle", function() {});
             elevator.on("floor_button_pressed", function(floorNum) {
                 elevator.goToFloor(floorNum, true);
@@ -159,7 +112,6 @@ function initFloor(floor) {
                 }
             });
         };
-        
         function findNearestElevator(floor) {
             var possibilities = elevators
                 .map(function (e) { 
@@ -173,7 +125,6 @@ function initFloor(floor) {
             });
             return possibilities[0].elevator;
         };
-        
         function initFloor(floor) {
             floor.on("up_button_pressed", function() {
                 // Maybe tell an elevator to go to this floor?
@@ -184,7 +135,6 @@ function initFloor(floor) {
                 findNearestElevator(floor).goToFloor(floor.floorNum());
             });
         };
-        
         elevators.forEach(initElevator);
         floors.forEach(initFloor);
     },
@@ -193,10 +143,12 @@ function initFloor(floor) {
     }
 }
 
+
 _**Solucion 4**_
+
+
 {
-    init: function(elevators, floors) {
-        
+    init: function(elevators, floors) {  
         function initElevator(elevator) {
             elevator.on("idle", function() {});
             elevator.on("floor_button_pressed", function(floorNum) {
@@ -216,7 +168,6 @@ _**Solucion 4**_
                 }
             });
         };
-        
         function findNearestElevator(floor) {
             var possibilities = elevators
                 .map(function (e) { 
@@ -230,7 +181,6 @@ _**Solucion 4**_
             });
             return possibilities[0].elevator;
         };
-        
         function initFloor(floor) {
             floor.on("up_button_pressed", function() {
                 // Maybe tell an elevator to go to this floor?
@@ -241,7 +191,6 @@ _**Solucion 4**_
                 findNearestElevator(floor).goToFloor(floor.floorNum());
             });
         };
-        
         elevators.forEach(initElevator);
         floors.forEach(initFloor);
     },
@@ -249,11 +198,13 @@ _**Solucion 4**_
         // We normally don't need to do anything here
     }
 }
+
 
 **_Solucion5_**
+
+
 {
-    init: function(elevators, floors) {
-        
+    init: function(elevators, floors) { 
         function initElevator(elevator) {
             elevator.on("idle", function() {});
             elevator.on("floor_button_pressed", function(floorNum) {
@@ -273,7 +224,6 @@ _**Solucion 4**_
                 }
             });
         };
-        
         function findNearestElevator(floor) {
             var possibilities = elevators
                 .map(function (e) { 
@@ -281,8 +231,7 @@ _**Solucion 4**_
                         elevator: e, 
                         score: e.loadFactor() 
                             + e.destinationQueue.length 
-                            + (Math.abs(floor.floorNum() - e.currentFloor()) / floors.length)
-                        ,
+                            + (Math.abs(floor.floorNum() - e.currentFloor()) / floors.length),
                     }; 
                 });
             possibilities.sort(function (left, right) {
@@ -290,7 +239,6 @@ _**Solucion 4**_
             });
             return possibilities[0].elevator;
         };
-        
         function initFloor(floor) {
             floor.on("up_button_pressed", function() {
                 // Maybe tell an elevator to go to this floor?
@@ -301,7 +249,6 @@ _**Solucion 4**_
                 findNearestElevator(floor).goToFloor(floor.floorNum());
             });
         };
-        
         elevators.forEach(initElevator);
         floors.forEach(initFloor);
     },
@@ -310,10 +257,12 @@ _**Solucion 4**_
     }
 }
 
+
 _**Solucion6**_
+
+
 {
     init: function(elevators, floors) {
-        
         function initElevator(elevator) {
             elevator.on("idle", function() {});
             elevator.on("floor_button_pressed", function(floorNum) {
@@ -333,7 +282,6 @@ _**Solucion6**_
                 }
             });
         };
-        
         function findNearestElevator(floor) {
             var possibilities = elevators
                 .map(function (e) { 
@@ -341,8 +289,7 @@ _**Solucion6**_
                         elevator: e, 
                         score: e.loadFactor() 
                             + e.destinationQueue.length 
-                            + (Math.abs(floor.floorNum() - e.currentFloor()) / floors.length)
-                        ,
+                            + (Math.abs(floor.floorNum() - e.currentFloor()) / floors.length),
                     }; 
                 });
             possibilities.sort(function (left, right) {
@@ -350,7 +297,6 @@ _**Solucion6**_
             });
             return possibilities[0].elevator;
         };
-        
         function initFloor(floor) {
             floor.on("up_button_pressed", function() {
                 // Maybe tell an elevator to go to this floor?
@@ -361,7 +307,6 @@ _**Solucion6**_
                 findNearestElevator(floor).goToFloor(floor.floorNum());
             });
         };
-        
         elevators.forEach(initElevator);
         floors.forEach(initFloor);
     },
@@ -373,7 +318,6 @@ _**Solucion6**_
 _**Solucion7**_
 {
     init: function(elevators, floors) {
-        
         function initElevator(elevator) {
             elevator.on("idle", function() {});
             elevator.on("floor_button_pressed", function(floorNum) {
@@ -393,7 +337,6 @@ _**Solucion7**_
                 }
             });
         };
-        
         function findNearestElevator(floor) {
             var possibilities = elevators
                 .map(function (e) { 
@@ -401,8 +344,7 @@ _**Solucion7**_
                         elevator: e, 
                         score: e.loadFactor() 
                             + e.destinationQueue.length 
-                            + (Math.abs(floor.floorNum() - e.currentFloor()) / floors.length)
-                        ,
+                            + (Math.abs(floor.floorNum() - e.currentFloor()) / floors.length),
                     }; 
                 });
             possibilities.sort(function (left, right) {
@@ -410,7 +352,6 @@ _**Solucion7**_
             });
             return possibilities[0].elevator;
         };
-        
         function initFloor(floor) {
             floor.on("up_button_pressed", function() {
                 // Maybe tell an elevator to go to this floor?
@@ -421,7 +362,6 @@ _**Solucion7**_
                 findNearestElevator(floor).goToFloor(floor.floorNum());
             });
         };
-        
         elevators.forEach(initElevator);
         floors.forEach(initFloor);
     },
