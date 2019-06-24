@@ -6,7 +6,7 @@ taxonomy:
     category:
         - blog
     tag:
-        - tarea
+        - 'tag manager'
 body_classes: 'header-lite fullwidth blogstyling'
 author: 'Mery Lema'
 ---

@@ -5,8 +5,7 @@ taxonomy:
     category:
         - blog
     tag:
-        - practica
-        - tarea
+        - 'Reloj canvas'
 body_classes: 'header-lite fullwidth blogstyling'
 author: 'Mery Lema'
 ---

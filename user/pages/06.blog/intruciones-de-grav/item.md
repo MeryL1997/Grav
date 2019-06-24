@@ -6,8 +6,7 @@ body_classes: 'header-lite fullwidth blogstyling'
 taxonomy:
     category: blog
     tag:
-        - intrucion
-        - apredizaje
+        - 'Intruciones de Grav'
 ---
 
 [](hqdefault.jpg)
