@@ -57,7 +57,7 @@ class __TwigTemplate_7f4d349656a26e53c22b3e64b9229185c0b44a8d9f6ef1b292969e6b9cb
             if ( !($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "continue_link", []) === false)) {
                 // line 13
                 echo "                <a href=\"";
-                echo $this->getAttribute(($context["page"] ?? null), "url", []);
+                echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "link", []);
                 echo "\"><i class=\"fa fa-angle-double-right\"></i></a>
                 ";
             }
@@ -263,7 +263,7 @@ class __TwigTemplate_7f4d349656a26e53c22b3e64b9229185c0b44a8d9f6ef1b292969e6b9cb
         {% if page.header.link %}
             <h4>
                 {% if page.header.continue_link is not sameas(false) %}
-                <a href=\"{{ page.url }}\"><i class=\"fa fa-angle-double-right\"></i></a>
+                <a href=\"{{ page.header.link }}\"><i class=\"fa fa-angle-double-right\"></i></a>
                 {% endif %}
                 <a href=\"{{ page.header.link }}\">{{ page.title }}</a>
             </h4>

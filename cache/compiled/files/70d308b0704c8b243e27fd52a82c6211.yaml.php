@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/data/feed/e126cb26dd3320bf22d9053a06df8a12.yaml',
-    'modified' => 1561381160,
+    'modified' => 1561405814,
     'data' => [
-        'last_checked' => 1561381160,
+        'last_checked' => 1561405814,
         'data' => [
             0 => [
                 'title' => 'Grav 1.6 Released!',

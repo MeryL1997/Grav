@@ -1,6 +1,7 @@
 ---
 title: 'Juego Canva'
-date: '10:02  06/15/2019'
+media_order: pinterest.jpg
+date: '15-06-2019 10:02'
 taxonomy:
     category:
         - blog
@@ -12,11 +13,11 @@ author: 'Mery Lema'
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, InicarNueva Partida=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         canvas {
             border: 1px solid #d3d3d3;
-            background-color: #E5E7E9 ;
+            background-color: #f1f1f1;
             margin-top: 6%; 
             margin-left: auto; 
             margin-right: auto;
@@ -90,9 +91,7 @@ author: 'Mery Lema'
     </div>
     <div id="modal"></div>
     <div id="ScoreTable"></div>
-    
-    
-            <a href="javascript:location.reload()">Iniciar Nueva Partida </a> 
+    <a href="javascript:location.reload()">Nueva Partida</a>
 
     <script>
 
@@ -101,7 +100,7 @@ author: 'Mery Lema'
         var myScore;
 
         function startGame() {
-            myGamePiece = new component(30, 30, "/user/themes/gateway/img/favicon.png", 10, 120,"image");
+            myGamePiece = new component(30, 30, "/user/pages/01.blog/blog-single10/angry-bird-red-icon.png", 10, 120,"image");
             myScore = new component("30px", "Consolas", "black", 280, 40, "text");
             myGameArea.start();
         }
@@ -268,15 +267,15 @@ author: 'Mery Lema'
             var codigo = event.which || event.keyCode;
             console.log("tecla :" +codigo);
 
-            if (codigo == 90) {
-                myGamePiece.speedY = 1;//down
-            } else if (codigo == 65) {
+            if (codigo == 83) {
+                myGamePiece.speedY = 1;//movedown
+            } else if (codigo == 87) {
                 console.log("Tecla pulsada " + codigo);
-                myGamePiece.speedY = -1;// up
+                myGamePiece.speedY = -1;//move up
             } else if (codigo == 68) {
                 console.log("Tecla pulsada " + codigo);
                 myGamePiece.speedX = 1;//moveright
-            } else if (codigo == 83) {
+            } else if (codigo == 65) {
                 console.log("Tecla pulsada " + codigo);
                 myGamePiece.speedX = -1;//moveleft
             }
@@ -287,7 +286,6 @@ author: 'Mery Lema'
             if ((myGameArea.frameNo / n) % 1 == 0) { return true; }
             return false;
         }
-        
-         </script>
+    </script>
 </body>
 </html>
