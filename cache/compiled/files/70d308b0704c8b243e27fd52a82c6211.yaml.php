@@ -2,15 +2,15 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/data/feed/e126cb26dd3320bf22d9053a06df8a12.yaml',
-    'modified' => 1561405814,
+    'modified' => 1561586626,
     'data' => [
-        'last_checked' => 1561405814,
+        'last_checked' => 1561577457,
         'data' => [
             0 => [
                 'title' => 'Grav 1.6 Released!',
                 'url' => 'https://getgrav.org/blog/grav-1.6-released',
                 'date' => 1554987300,
-                'nicetime' => '2 meses antes'
+                'nicetime' => '3 meses antes'
             ],
             1 => [
                 'title' => 'Important Theme Updates',
@@ -46,7 +46,7 @@ return [
                 'title' => 'Vote for Grav in the 2018 CMS Critic People\'s Choice Awards',
                 'url' => 'https://getgrav.org/blog/cms-critic-award-finalists-2018',
                 'date' => 1539096480,
-                'nicetime' => '8 meses antes'
+                'nicetime' => '9 meses antes'
             ],
             7 => [
                 'title' => 'New XSS Protection Available in Grav 1.5.2',

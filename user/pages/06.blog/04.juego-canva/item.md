@@ -100,7 +100,7 @@ author: 'Mery Lema'
         var myScore;
 
         function startGame() {
-            myGamePiece = new component(30, 30, "/user/pages/01.blog/blog-single10/angry-bird-red-icon.png", 10, 120,"image");
+            myGamePiece = new component(30, 30, "user\pages\06.blog\04.juego-canva\pinterest.jpg", 10, 120,"image");
             myScore = new component("30px", "Consolas", "black", 280, 40, "text");
             myGameArea.start();
         }
