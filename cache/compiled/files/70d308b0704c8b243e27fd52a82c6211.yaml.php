@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/data/feed/e126cb26dd3320bf22d9053a06df8a12.yaml',
-    'modified' => 1561586626,
+    'modified' => 1562015450,
     'data' => [
-        'last_checked' => 1561577457,
+        'last_checked' => 1562015450,
         'data' => [
             0 => [
                 'title' => 'Grav 1.6 Released!',
@@ -28,7 +28,7 @@ return [
                 'title' => 'We\'re Moving Chat from Slack to Discord',
                 'url' => 'https://getgrav.org/blog/chat-moving-to-discord',
                 'date' => 1542203100,
-                'nicetime' => '7 meses antes'
+                'nicetime' => '8 meses antes'
             ],
             4 => [
                 'title' => 'RocketTheme\'s Halloween Sale is Going on Right Now',
@@ -40,7 +40,7 @@ return [
                 'title' => 'Git-Sync 2.0',
                 'url' => 'https://getgrav.org/blog/git-sync-2.0',
                 'date' => 1539604800,
-                'nicetime' => '8 meses antes'
+                'nicetime' => '9 meses antes'
             ],
             6 => [
                 'title' => 'Vote for Grav in the 2018 CMS Critic People\'s Choice Awards',
