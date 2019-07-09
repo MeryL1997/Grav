@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1561396023,
-    'checksum' => '819f44c00e161b5d8121ec6bb1efa145',
+    'timestamp' => 1562635401,
+    'checksum' => 'ea279c9f08d2a21b865a6ac23a0fd4f9',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -39,7 +39,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1561381205
+                'modified' => 1562625617
             ]
         ],
         'system/config' => [
@@ -1007,7 +1007,7 @@ node_modules'
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -1056,13 +1056,13 @@ node_modules'
                 'umask_fix' => false
             ],
             'assets' => [
-                'css_pipeline' => false,
+                'css_pipeline' => true,
                 'css_pipeline_include_externals' => true,
                 'css_pipeline_before_excludes' => true,
                 'css_minify' => true,
                 'css_minify_windows' => false,
                 'css_rewrite' => true,
-                'js_pipeline' => false,
+                'js_pipeline' => true,
                 'js_pipeline_include_externals' => true,
                 'js_pipeline_before_excludes' => true,
                 'js_minify' => true,
@@ -1104,7 +1104,8 @@ node_modules'
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 8388608
             ],
             'session' => [
                 'enabled' => true,
