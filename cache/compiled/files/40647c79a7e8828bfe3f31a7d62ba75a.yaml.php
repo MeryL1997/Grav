@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/system/blueprints/config/security.yaml',
-    'modified' => 1561381205,
+    'modified' => 1563221223,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SECURITY',
         'form' => [
