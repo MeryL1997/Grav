@@ -1,0 +1,27 @@
+{
+    "laboratorio":[{
+            "id":"1",
+            "nombre":"Marc",
+            "materia":"Graficacion",
+            "horario":"16:00 - 18:00"
+        },
+        {
+            "id":"2",
+            "nombre":"Susana",
+            "materia":"Base de Datos",
+            "horario":"18:00 - 20:00"
+        },
+        {
+            "id":"3",
+            "nombre":"Juan",
+            "materia":"Redes",
+            "horario":"20:00 - 22:00"
+        },
+        {
+            "id":"4",
+            "nombre":"Marta",
+            "materia":"ingles",
+            "horario":"14:00 - 16:00"
+        }
+    ]
+}
