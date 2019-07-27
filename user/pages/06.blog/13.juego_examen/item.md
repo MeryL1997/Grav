@@ -1,6 +1,6 @@
 ---
 title: Juego_Examen
-link: /Juego_Examen/concentracion/index.html
+link: /Recuerso/concentracion/index.html
 date: '16:42 06/24/2019'
 taxonomy:
     category:

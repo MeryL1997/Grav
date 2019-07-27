@@ -1,6 +1,6 @@
 ---
 title: 'Juego Phaser'
-link: /Juego/game/t_hunter.html
+link: /Recuerso/game/t_hunter.html
 date: '16:42 06/19/2019'
 taxonomy:
     category:
