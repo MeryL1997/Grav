@@ -10,15 +10,17 @@ body_classes: 'header-lite fullwidth blogstyling'
 author: 'Mery Lema'
 ---
 
-# Herramientas o Recurso del Proyecto
+# Herramientas o Recurso del Proyecto Final
 
 ### Framework
-La React js por lo que usa una librería Javascript focalizada en el desarrollo de interfaces de usuario. Para  la  aplicaciones web, SPA (Single Page Application).
+* La React js por lo que usa una librería Javascript focalizada en el desarrollo de interfaces de usuario. Para  la  aplicaciones web, SPA       (Single Page Application).
+* Ar js para hacer la parte de realidad aumentada.
+* Boostrap 4 para dar estilos.
 
-### Base de Datos
-Mysql: es una base realcional que nos permitira tiene conxion el la ahorra de aplicacion
-Firebase: es un base no relacional es un poco complicada de conexion.
-
+### Backend
+* Mysql: es una base de datos relacional para la aplicacion.
+* Firebase: es un base no relacional es un poco complicada de conexion.
+* Express js
 ### Rol
 Los roles que se va aplicar es:
 * Estudiantes.
@@ -26,11 +28,10 @@ Los roles que se va aplicar es:
 * Coord.Carrera.
 * Administrador.
 
-### Control
+### Control Admi
+* Reportes
+* Gest.usuario
 
 
-### Access
 
-
-### Span
 
