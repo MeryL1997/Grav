@@ -22,19 +22,21 @@ Es la herramienta que ofrece Facebook.
 ### Vue.js:
 Es la herramienta que ofrece la comunidad y es impulsada y actualizada por la misma.
 
+<p><a href="..../blog/vue-react-angular/SPA FRAMEWORKS.docx">Informe SPA frameworks.doc</a></p>
+
 <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Item toolbar buttons">
     	<div class="btn-group">
-					<a href="https://pruebareact.netlify.com/"
+					<a href="/Recuerso/Angular/ej2.html"
 			class="btn btn-outline-dark">
-								React js
+								Angular js ||
 			</a>
-					<a href="https://pruebavue.netlify.com/"
+					<a href="/Recuerso/React/React.html"
+			class="btn btn-outline-dark">
+								React js ||
+			</a>
+					<a href="/Recuerso/Vue/Vue.html"
 			class="btn btn-outline-dark">
 								Vue js
-			</a>
-					<a href="https://pruebaangular.netlify.com"
-			class="btn btn-outline-dark">
-								Angular js
 			</a>
 			</div>
 </div>
