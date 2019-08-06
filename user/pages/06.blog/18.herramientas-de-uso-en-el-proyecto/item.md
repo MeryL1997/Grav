@@ -32,6 +32,13 @@ Los roles que se va aplicar es:
 * Reportes
 * Gest.usuario
 
+### El React con el puerto
+[]()http://merylema.com:3000/
+
+# Etapa del Proyecto final 
+### La primera etapa 
+hacer un login que tendra para los 4 usuario, estudiantes, docentes,coor.de Carrera, el administrador, en la parte publica tendre los paracador para ver si esta ocupado o no tipo como el aula virtual de la Universidad pero con doble autentificacion
+
 
 
 

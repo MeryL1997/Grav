@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/grav/user/data/feed/e126cb26dd3320bf22d9053a06df8a12.yaml',
-    'modified' => 1564592995,
+    'modified' => 1565105670,
     'data' => [
-        'last_checked' => 1564592995,
+        'last_checked' => 1565105670,
         'data' => [
             0 => [
                 'title' => 'Grav 1.6 Released!',
@@ -16,7 +16,7 @@ return [
                 'title' => 'Important Theme Updates',
                 'url' => 'https://getgrav.org/blog/important-theme-updates',
                 'date' => 1553169300,
-                'nicetime' => '4 meses antes'
+                'nicetime' => '5 meses antes'
             ],
             2 => [
                 'title' => 'All RocketTheme Grav Themes 50% Off for Black Friday',
@@ -40,7 +40,7 @@ return [
                 'title' => 'Git-Sync 2.0',
                 'url' => 'https://getgrav.org/blog/git-sync-2.0',
                 'date' => 1539604800,
-                'nicetime' => '9 meses antes'
+                'nicetime' => '10 meses antes'
             ],
             6 => [
                 'title' => 'Vote for Grav in the 2018 CMS Critic People\'s Choice Awards',
